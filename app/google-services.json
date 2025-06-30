@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "YOUR_PROJECT_NUMBER",
+    "firebase_url": "YOUR_FIREBASE_URL",
+    "project_id": "YOUR_PROJECT_ID",
+    "storage_bucket": "YOUR_STORAGE_BUCKET"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "YOUR_MOBILESDK_APP_ID_ANDROID",
+        "android_client_info": {
+          "package_name": "com.example.fitnesstrackingapp" // Should match your app's package name
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "YOUR_WEB_CLIENT_ID_FOR_ANDROID_AUTH", // Often used for Google Sign-In
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "YOUR_ANDROID_API_KEY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
+// Instructions:
+// 1. Go to the Firebase console (console.firebase.google.com).
+// 2. Select your Firebase project (or create one).
+// 3. In the Project Overview, click the Android icon (or "Add app" and then select Android).
+// 4. Register your app:
+//    - Android package name: Must match the `applicationId` in your `app/build.gradle`
+//      (e.g., com.example.fitnesstrackingapp).
+//    - App nickname (optional).
+//    - Debug signing certificate SHA-1 (optional for setup, but needed for some Firebase services like Google Sign-In, Phone Auth).
+//      You can get this by running `./gradlew signingReport` in Android Studio's terminal.
+// 5. Download the `google-services.json` file.
+// 6. Place this downloaded file in your Android app module root directory (usually `app/`).
+// 7. The Google Services Gradle plugin (added in build.gradle) will automatically process this file.
